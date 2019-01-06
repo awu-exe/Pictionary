@@ -47,6 +47,7 @@
 		49FA56CB21E29F3600B72706 /* PictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FA56CF21E29F3600B72706 /* PictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictionaryUITests.swift; sourceTree = "<group>"; };
 		49FA56D121E29F3600B72706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FA56DE21E29F6E00B72706 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 				49FA56C321E29F3600B72706 /* PictionaryTests */,
 				49FA56CE21E29F3600B72706 /* PictionaryUITests */,
 				49FA56AD21E29F3400B72706 /* Products */,
+				49FA56DD21E29F6E00B72706 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +125,14 @@
 				49FA56D121E29F3600B72706 /* Info.plist */,
 			);
 			path = PictionaryUITests;
+			sourceTree = "<group>";
+		};
+		49FA56DD21E29F6E00B72706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49FA56DE21E29F6E00B72706 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Pictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.Pictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +462,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Pictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.Pictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
